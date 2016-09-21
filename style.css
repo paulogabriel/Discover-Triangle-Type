@@ -1,0 +1,170 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	color: #333;
+	line-height: 1;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper{
+	max-width:1280px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+	text-align: center;
+}
+h1{
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin: 40px 0 50px;
+    font-size: 2em;
+}
+form{
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+ul{
+    float: left;
+    list-style:none;
+    padding: 0;
+    width: 100%;
+} 
+form li{
+	display: inline-block;
+    margin-bottom:20px;
+    width: 50%;
+}
+@media screen and (max-width: 500px){
+	form li{
+		width: 100%;
+	}
+}
+input{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+input[type=text]{
+	border: 1px solid #ddd;
+	color: #999;
+	font-size: 1.2em;
+	padding: 15px 5%;
+	width: 90%;
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+input[type=text]:focus{
+	color: #666;
+	border-color: #999;
+	outline: none;
+	-moz-box-shadow: 0 0 2px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.5);
+	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+label{
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+}
+input[type=button]{
+	background: #999;
+	color: #fff;
+	border: 0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	float: none;
+	font-size: 0.75em;
+	font-weight: 800;
+	padding: 10px 22px;
+	text-transform: uppercase;
+	text-align: center;
+	width: auto;
+}
+input[type=button]:hover{
+	background: #666;
+	cursor: pointer;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+input#begin{
+	background: #00b0ff;
+}
+input#begin:hover{
+	background: #004ee2;
+}
+input#clear:hover,
+input#all:hover{
+	background: #666;
+}
+li.further input{
+	width: 100%;
+	margin-bottom: 5px;
+}
+input#delete{
+	background: #fea4a4;
+}
+input#delete:hover{
+	background: #fc3131;
+}
+#result{
+	font-weight: bold;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+#result li{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}

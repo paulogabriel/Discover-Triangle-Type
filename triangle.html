@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Triangle test</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+	<h1>What's the triangle type?</h1>
+	<form>
+		<ul>
+			<li>
+				<label>Side one:</label>
+				<input type="text" id="sideOne">
+			</li>
+			<li>
+				<label>Side two:</label>
+				<input type="text" id="sideTwo">
+			</li>
+			<li>
+				<label>Side three:</label>
+				<input type="text" id="sideThree">
+			</li>
+			<li class="test-item">
+				<input type="button" id="begin" value="Test it!" onclick="getValues()">
+				<input type="button" id="clear" value="Clear Window" onclick="clearAll()">
+			</li>
+			<li class="further">
+				<input type="button" id="all" value="List all" onclick="listAll()">
+				<input type="button" id="equilateral" value="List Equilateral Only" onclick="listEquilateral()">
+				<input type="button" id="isosceles" value="List Isosceles Only" onclick="listIsosceles()">
+				<input type="button" id="scalene" value="List Scalene Only" onclick="listScalene()">
+				<input type="button" id="delete" value="Delete data" onclick="deleteAll()">
+			</li>
+		</ul>
+	</form>
+	<ul id="result">
+	</ul>
+	</div>
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
